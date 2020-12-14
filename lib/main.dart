@@ -1,8 +1,3 @@
-import 'package:carpool_application/components/custom_navigation_bar.dart';
-import 'package:carpool_application/screens/forgot_screen.dart';
-import 'package:carpool_application/screens/login_screen.dart';
-import 'package:carpool_application/screens/phone_verifacation.dart';
-import 'package:carpool_application/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
