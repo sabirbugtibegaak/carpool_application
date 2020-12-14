@@ -89,10 +89,10 @@ class Profile extends StatelessWidget {
                 user: 'First Name',
                 vaue: 'Sabir',
               ),
-              separatorBuilder: (context,index)=>Divider(
+              separatorBuilder: (context, index) => Divider(
                 color: Colors.grey,
               ),
-              itemCount: null,
+              itemCount: 10,
             ),
           ],
         ),
