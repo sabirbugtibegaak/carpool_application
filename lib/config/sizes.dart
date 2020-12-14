@@ -1,12 +1,14 @@
 class Sizes {
   static const sizeBoxHeight = {
     "sm": 6.0,
+    
     "xll": 12.0,
     "default": 24.0,
     "lg": 36.0,
     "xs": 50.0,
   };
   static const sizeBoxWidth = {
+    "fv": 10.0,
     "sm": 6.0,
     "xll": 12.0,
     "default": 24.0,

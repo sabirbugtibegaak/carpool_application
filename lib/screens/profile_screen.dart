@@ -2,19 +2,29 @@ import 'package:carpool_application/config/sizes.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatelessWidget {
-  Widget _intiUserValue()=> Container(
-    
-     child: Row(
-       children: [
-         Text(
-            'Cancel',
-            style: TextStyle(
-              fontSize: Sizes.textStyleSize['lg'],
+  Widget _intiUserValue({String user,String vaue}) => Container(
+        child: Row(
+          children: [
+            Text(
+              '$user:',
+              style: TextStyle(
+                color: Colors.grey,
+                fontSize: Sizes.textStyleSize['lg'],
+              ),
             ),
-          ),
-       ],
-     ),
-  );
+            SizedBox(
+              width: Sizes.sizeBoxWidth['fv'],
+            ),
+            Text(
+              vaue,
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: Sizes.textStyleSize['lg'],
+              ),
+            ),
+          ],
+        ),
+      );
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,7 +53,6 @@ class Profile extends StatelessWidget {
           ),
         ],
       ),
-  
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
@@ -74,7 +83,10 @@ class Profile extends StatelessWidget {
                 ],
               ),
             ),
-            _intiUserValue(),
+            _intiUserValue(
+              user: 'First Name',
+              vaue: 'Sabir',
+            ),
           ],
         ),
       ),
