@@ -2,7 +2,7 @@
 import 'package:carpool_application/screens/carpool_partner.dart';
 import 'package:carpool_application/screens/my_ride.dart';
 import 'package:carpool_application/screens/offer_a_ride.dart';
-import 'package:carpool_application/screens/profile.dart';
+import 'package:carpool_application/screens/more.dart';
 import 'package:ff_navigation_bar/ff_navigation_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -18,7 +18,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
   final _myRideScreen = GlobalKey<NavigatorState>();
   final _offerARideScreen = GlobalKey<NavigatorState>();
   final _notificationsScreen = GlobalKey<NavigatorState>();
-  final _profileScreen = GlobalKey<NavigatorState>();
+  final _moreScreen = GlobalKey<NavigatorState>();
   final _findARideScreen = GlobalKey<NavigatorState>();
 
   @override
@@ -56,10 +56,10 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
             ),
           ),
           Navigator(
-            key: _profileScreen,
+            key: _moreScreen,
             onGenerateRoute: (route) => MaterialPageRoute(
               settings: route,
-              builder: (context) => Profile(),
+              builder: (context) => More(),
             ),
           ),
         ],
@@ -116,7 +116,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
           _notificationsScreen.currentState.popUntil((route) => route.isFirst);
           break;
         case 4:
-          _profileScreen.currentState.popUntil((route) => route.isFirst);
+          _moreScreen.currentState.popUntil((route) => route.isFirst);
           break;
         default:
       }

@@ -4,12 +4,12 @@ import 'package:carpool_application/screens/help.dart';
 import 'package:carpool_application/screens/setting.dart';
 import 'package:flutter/material.dart';
 
-class Profile extends StatefulWidget {
+class More extends StatefulWidget {
   @override
-  _ProfileState createState() => _ProfileState();
+  _MoreState createState() => _MoreState();
 }
 
-class _ProfileState extends State<Profile> {
+class _MoreState extends State<More> {
   Widget _buildSingleButton(
       {String buttonText, IconData buttonIcon, Function onTap}) {
     return Container(

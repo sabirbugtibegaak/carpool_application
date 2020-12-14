@@ -6,6 +6,8 @@ import 'package:carpool_application/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import 'screens/profile_screen.dart';
+
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
     SystemUiOverlayStyle(
@@ -26,9 +28,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         scaffoldBackgroundColor: Color(0xfff3f0f0),
-        primaryColor: Color(0xff8bda9f),
+        primaryColor: Colors.greenAccent[400],
+       // Color(0xff8bda9f),
       ),
-      home: SignupScreen(),
+      home: Profile()
     );
   }
 }
