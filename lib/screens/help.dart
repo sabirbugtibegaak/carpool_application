@@ -33,11 +33,9 @@ class Help extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        child: CustomAppBar(
-          appHeading: "Help",
-        ),
-        preferredSize: Size.fromHeight(60),
+      appBar: appBar(
+        appHeading: "Help",
+        context: context,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 6.0),

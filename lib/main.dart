@@ -1,4 +1,8 @@
 import 'package:carpool_application/components/custom_navigation_bar.dart';
+import 'package:carpool_application/screens/forgot_screen.dart';
+import 'package:carpool_application/screens/login_screen.dart';
+import 'package:carpool_application/screens/phone_verifacation.dart';
+import 'package:carpool_application/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -24,7 +28,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: Color(0xfff3f0f0),
         primaryColor: Color(0xff8bda9f),
       ),
-      home: CustomNavigationBar(),
+      home: SignupScreen(),
     );
   }
 }

@@ -15,4 +15,11 @@ class Constants {
       ),
     );
   }
+  static routePushReplacement(BuildContext context, Widget widget) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (ctx) => widget,
+      ),
+    );
+  }
 }

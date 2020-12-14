@@ -1,30 +1,29 @@
-import 'package:carpool_application/components/custom_button.dart';
 import 'package:carpool_application/components/custom_appbar.dart';
+import 'package:carpool_application/components/custom_button.dart';
 import 'package:carpool_application/components/custom_textfleid.dart';
 import 'package:carpool_application/config/sizes.dart';
 import 'package:flutter/material.dart';
 
-class DeleteAccount extends StatelessWidget {
+class ForgotScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(
-        appHeading: "Delete Account",
+        appHeading: "Forgot",
         context: context,
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 12.0),
+        padding: const EdgeInsets.all(12.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CustomTextFleid(
-              textHeading: "Password",
+              textHeading: 'Email',
             ),
-            SizedBox(
-              height: Sizes.sizeBoxHeight["lg"],
-            ),
+            SizedBox(height: Sizes.sizeBoxHeight['default']),
             CustomButton(
-              buttonText: "Confirm",
+              buttonText: 'Confirm',
+              onPressed: () {},
             ),
           ],
         ),

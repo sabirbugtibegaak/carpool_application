@@ -34,11 +34,9 @@ class _ChangeLanguageState extends State<ChangeLanguage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60),
-        child: CustomAppBar(
-          appHeading: "Change Language",
-        ),
+      appBar: appBar(
+        appHeading: "Change Language",
+        context: context,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,

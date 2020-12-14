@@ -8,11 +8,9 @@ class ChangePassword extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        child: CustomAppBar(
-          appHeading: "johncena@gmail.com",
-        ),
-        preferredSize: Size.fromHeight(60),
+      appBar: appBar(
+        appHeading: 'Change Password',
+        context: context,
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12.0),

@@ -36,11 +36,9 @@ class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: PreferredSize(
-        preferredSize: Size.fromHeight(60),
-        child: CustomAppBar(
-          appHeading: "Settings",
-        ),
+      appBar: appBar(
+        appHeading: "Setting",
+        context: context,
       ),
       body: Column(
         children: [
