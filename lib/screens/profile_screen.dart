@@ -145,12 +145,13 @@ class _ProfileState extends State<Profile> {
               user: 'verify profile',
               vaue: '',
             ),
+            //// fb yeah pe lagega...
             _intiUserValue(
               user: 'More information about yourself',
               vaue: '',
             ),
             ///// yeah pr textfield honga..
-            ///jo k.... pora detail dega
+            ///jo k.... pora detail Lega
             /// user apna....
             _intiUserValue(
               user: 'Car & rider details',

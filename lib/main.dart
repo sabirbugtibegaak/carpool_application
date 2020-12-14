@@ -1,7 +1,8 @@
+import 'package:carpool_application/components/custom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'screens/profile_screen.dart';
+import 'screens/notifications.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.greenAccent[400],
        // Color(0xff8bda9f),
       ),
-      home: Profile()
+      home: CustomNavigationBar()
     );
   }
 }
