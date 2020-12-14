@@ -2,13 +2,14 @@ import 'package:carpool_application/config/sizes.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatelessWidget {
-  Widget _intiUserValue({String user,String vaue}) => Container(
+  Widget _intiUserValue({String user, String vaue}) => Container(
         child: Row(
           children: [
             Text(
-              '$user:',
+              '$user :',
               style: TextStyle(
                 color: Colors.grey,
+                fontWeight: FontWeight.w500,
                 fontSize: Sizes.textStyleSize['lg'],
               ),
             ),
@@ -83,9 +84,15 @@ class Profile extends StatelessWidget {
                 ],
               ),
             ),
-            _intiUserValue(
-              user: 'First Name',
-              vaue: 'Sabir',
+            ListView.separated(
+              itemBuilder: (context, index) => _intiUserValue(
+                user: 'First Name',
+                vaue: 'Sabir',
+              ),
+              separatorBuilder: (context,index)=>Divider(
+                color: Colors.grey,
+              ),
+              itemCount: null,
             ),
           ],
         ),
