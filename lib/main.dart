@@ -1,18 +1,6 @@
 import 'package:carpool_application/components/custom_navigation_bar.dart';
-import 'package:carpool_application/screens/message_screen.dart';
-import 'package:carpool_application/screens/review_screen.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
-import 'screens/profile_screen.dart';
-
-void main() {
   SystemChrome.setSystemUIOverlayStyle(
-    SystemUiOverlayStyle(
-      systemNavigationBarColor: Colors.transparent, // navigation bar color
       statusBarColor: Color(0xff8bda9f), // status bar color
-    ),
-  );
   runApp(
     MyApp(),
   );
