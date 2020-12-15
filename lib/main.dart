@@ -1,6 +1,7 @@
-import 'package:carpool_application/components/custom_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+
+import 'components/custom_navigation_bar.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(

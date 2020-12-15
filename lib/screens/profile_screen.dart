@@ -9,7 +9,7 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   bool _value = false;
   bool _smokeValue = false;
- bool _musicInCarValue = false;
+  bool _musicInCarValue = false;
 
   Widget _intiUserValue({String user, String vaue}) => Container(
         child: Column(
@@ -173,6 +173,7 @@ class _ProfileState extends State<Profile> {
                             color: Colors.black),
                       ),
                       Switch(
+                        activeColor: Colors.greenAccent,
                         value: _value,
                         onChanged: (bool value) {
                           setState(
@@ -195,59 +196,61 @@ class _ProfileState extends State<Profile> {
                             _customField(hintText: 'Brands'),
                             _customField(hintText: 'Colors'),
                             _customField(hintText: 'License Plate'),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Do you smoke?',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      letterSpacing: 1,
+                                      fontSize: Sizes.textStyleSize['default'],
+                                      color: Colors.black),
+                                ),
+                                Switch(
+                                  value: _smokeValue,
+                                  activeColor: Colors.greenAccent,
+                                  onChanged: (bool value) {
+                                    setState(
+                                      () {
+                                        _smokeValue = value;
+                                      },
+                                    );
+                                  },
+                                ),
+                              ],
+                            ),
+                            Divider(
+                              color: Colors.grey,
+                              thickness: 1,
+                            ),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  'Do you listen to music in the car?',
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.bold,
+                                      letterSpacing: 1,
+                                      fontSize: Sizes.textStyleSize['default'],
+                                      color: Colors.black),
+                                ),
+                                Switch(
+                                  value: _musicInCarValue,
+                                  activeColor: Colors.greenAccent,
+                                  onChanged: (bool value) {
+                                    setState(
+                                      () {
+                                        _musicInCarValue = value;
+                                      },
+                                    );
+                                  },
+                                ),
+                              ],
+                            ),
                           ],
                         )
                       : Container(),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Do you have a car?',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1,
-                            fontSize: Sizes.textStyleSize['default'],
-                            color: Colors.black),
-                      ),
-                      Switch(
-                        value: _smokeValue,
-                        onChanged: (bool value) {
-                          setState(
-                            () {
-                              _smokeValue = value;
-                            },
-                          );
-                        },
-                      ),
-                    ],
-                  ),
-                  Divider(
-                    color: Colors.grey,
-                    thickness: 1,
-                  ),
-                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'Do you listen to music in the car?',
-                        style: TextStyle(
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: 1,
-                            fontSize: Sizes.textStyleSize['default'],
-                            color: Colors.black),
-                      ),
-                      Switch(
-                        value: _musicInCarValue,
-                        onChanged: (bool value) {
-                          setState(
-                            () {
-                              _musicInCarValue = value;
-                            },
-                          );
-                        },
-                      ),
-                    ],
-                  ),
                 ],
               ),
             ),
