@@ -1,6 +1,8 @@
 import 'package:carpool_application/config/constants.dart';
 import 'package:carpool_application/config/sizes.dart';
 import 'package:carpool_application/screens/help.dart';
+import 'package:carpool_application/screens/message_screen.dart';
+import 'package:carpool_application/screens/review_screen.dart';
 import 'package:carpool_application/screens/setting.dart';
 import 'package:flutter/material.dart';
 
@@ -127,7 +129,7 @@ class _MoreState extends State<More> {
                       buttonText: "My Messages",
                       onTap: () => Constants.routePush(
                         context,
-                        Settings(),
+                        MessageScreen(),
                       ),
                     ),
                     SizedBox(
@@ -138,7 +140,7 @@ class _MoreState extends State<More> {
                       buttonText: "Reviews",
                       onTap: () => Constants.routePush(
                         context,
-                        Settings(),
+                        ReviewScreen(),
                       ),
                     ),
                     SizedBox(

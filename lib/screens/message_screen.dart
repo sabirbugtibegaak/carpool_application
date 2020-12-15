@@ -4,29 +4,30 @@ import 'package:carpool_application/components/custom_textfleid.dart';
 import 'package:carpool_application/config/sizes.dart';
 import 'package:flutter/material.dart';
 
-class MyMessage extends StatelessWidget {
+class MessageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: appBar(
-        appHeading: "Forgot",
+        appHeading: "My Message",
         context: context,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(12.0),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            CustomTextFleid(
-              textHeading: 'Email',
+      body: Column(
+        //crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Center(
+            child: Text(
+              "You don't have any message",
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: Sizes.textStyleSize["xs"],
+                color: Colors.grey[700],
+              ),
             ),
-            SizedBox(height: Sizes.sizeBoxHeight['default']),
-            CustomButton(
-              buttonText: 'Confirm',
-              onPressed: () {},
-            ),
-          ],
-        ),
+          )
+        ],
       ),
     );
   }

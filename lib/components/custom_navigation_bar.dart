@@ -1,4 +1,3 @@
-
 import 'package:carpool_application/screens/carpool_partner.dart';
 import 'package:carpool_application/screens/my_ride.dart';
 import 'package:carpool_application/screens/offer_a_ride.dart';
@@ -81,7 +80,7 @@ class _CustomNavigationBarState extends State<CustomNavigationBar> {
           ),
           FFNavigationBarItem(
             iconData: Icons.emoji_transportation,
-            label: 'Ride',
+            label: 'My Ride',
           ),
           FFNavigationBarItem(
             iconData: Icons.add_circle_outline,
